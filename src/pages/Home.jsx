@@ -19,7 +19,7 @@ const WeatherIcon = ({ condition }) => {
 };
 
 const WeatherCard = ({ city, condition, minTemp, maxTemp }) => (
-  <div className="text-white text-center p-2">
+  <div className="text-white text-center p-3">
     <h3 className="font-bold">{city}</h3>
     <WeatherIcon condition={condition} />
     <p className="text-sm">{condition}</p>
