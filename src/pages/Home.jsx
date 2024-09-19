@@ -4,6 +4,10 @@ import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css"; // Import Leaflet styles
 import weather from "../assets/images/weather warning.jpg";
 import flood from "../assets/images/flood.png";
+import logo from "../assets/images/ghaaplogo.png";
+import logo2 from "../assets/images/mofalog.png";
+import logo3 from "../assets/images/fsrp.png";
+import logo4 from "../assets/images/gmetlogo.jpg";
 
 const WeatherIcon = ({ condition }) => {
   switch (condition) {
@@ -75,15 +79,14 @@ const Home = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-400 to-blue-600">
-      <header className="bg-white p-4 flex flex-col md:flex-row justify-between items-center">
-        <div className="flex items-center space-x-4">
-          <img
-            src="/path-to-ghaap.png"
-            alt="Ghaap img"
-            className="h-12 md:h-16"
-          />
-          <div>
+    <div className="min-h-screen bg-gradient-to-b from-blue-400 to-blue-600 ">
+      <header className="bg-white p-4 flex flex-col md:flex-row justify-between items-center ">
+        <div className="flex items-center ml-52 space-x-4">
+          <img src={logo} alt="Ghaap logo" className="h-12 md:h-16" />
+          <img src={logo2} alt="Mofa logo" className="h-12 md:h-16" />
+          <img src={logo3} alt="Fsrp logo" className="h-12 md:h-16" />
+          <img src={logo4} alt="GMet logo" className="h-12 md:h-16" />
+          {/* <div>
             <h1 className="text-red-600 font-bold text-lg md:text-xl">
               MoFA-FSRP
             </h1>
@@ -91,9 +94,9 @@ const Home = () => {
               AND GMet
             </h2>
             <p className="text-sm">GhAAP</p>
-          </div>
+          </div> */}
         </div>
-        <nav className="space-x-2 md:space-x-4 text-sm mt-4 md:mt-0">
+        <nav className="space-x-2 md:space-x-4 mr-52 text-sm mt-4 md:mt-0">
           <a href="#" className="text-blue-600">
             HOME
           </a>
