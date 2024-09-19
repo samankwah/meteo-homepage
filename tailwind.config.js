@@ -28,13 +28,13 @@ export default {
       },
       fontFamily: {
         sans: [
-          "Amatic SC, cursive",
+          "Amatic SC",
           "ui-sans-serif",
           "system-ui",
           "-apple-system",
           "BlinkMacSystemFont",
           "Segoe UI",
-          "Amatic SC, cursive",
+          "Amatic SC",
           "Helvetica Neue",
           "Arial",
           "Noto Sans",
